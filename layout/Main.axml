@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView1">-->
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1">
+        <Button
+            android:text="Add Patient Details"
+            android:id="@+id/btnOpenPatient" />
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:id="@+id/listViewPatients" />
+        <TextView
+            android:text="Results:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtResults" />
+        <Button
+            android:text="Create Database"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCreateDatabase" />
+        <Button
+            android:text="Create Table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCreateTable" />
+        <Button
+            android:text="Add to Table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAddItems" />
+        <Button
+            android:text="Read from Table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRead" />
+        <Button
+            android:text="Count items in Table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCount" />
+        <Button
+            android:text="Delete Table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDeleteTable" />
+        <Button
+            android:text="Delete Database"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDeleteDatabase" />
+        <TextView
+            android:text="People ID"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1" />
+        <EditText
+            android:id="@+id/txtPeopleID"
+            android:text="0" />
+        <Button
+            android:text="Delete by People ID"
+            android:id="@+id/btnDeletePeopleID" />
+        <EditText
+            android:inputType="textMultiLine"
+            android:id="@+id/editText2" />
+        <Spinner
+            android:id="@+id/spinner1" />
+        <Button
+            android:text="Create Medic Table"
+            android:id="@+id/btnAddMedicTable" />
+        <Button
+            android:text="Create Patient Details Table"
+            android:id="@+id/btnAddPatientTable" />
+        <Button
+            android:text="Create Vitals Table"
+            android:id="@+id/btnVitalsTable" />
+        <Button
+            android:text="Create Trauma Table"
+            android:id="@+id/btnAddTrauma" />
+        <Button
+            android:text="Create Medical Table"
+            android:id="@+id/btnAddMedical" />
+        <DatePicker
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/datePicker1" />
+    </TableLayout>
+<!--    </ScrollView>-->
+</LinearLayout>
