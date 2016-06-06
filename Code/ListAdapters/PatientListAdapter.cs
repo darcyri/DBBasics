@@ -71,7 +71,8 @@ namespace DBBasics
 					Android.Resource.Layout.SimpleListItemChecked ,
 					parent,
 					false)) as CheckedTextView ;
-			view.SetText (item.PatientFirstName ==""?"<new patient>":item.PatientFirstName , TextView.BufferType.Normal);
+			view.SetText (item.PatientFirstName ==""?"<new patient>":item.PatientFirstName +": " + Convert.ToString (item.PatientID ) + "," + item.AssessStartDate + "," + item.AssessStartTime   , 
+				TextView.BufferType.Normal);
 			view.Checked = item.Transferred ;
 			//Finally return the view
 			return view;
