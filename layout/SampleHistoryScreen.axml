@@ -20,101 +20,115 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/textView1" />
             <TextView
-                android:text="Signs and Symptoms:"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView2" />
-            <EditText
-                android:inputType="textMultiLine"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editSigns" />
-            <TextView
-                android:text="Allergies:"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView3" />
-            <EditText
-                android:inputType="textMultiLine"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editAllergies" />
-            <TextView
-                android:text="Medications:"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView4" />
-            <EditText
-                android:inputType="textMultiLine"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editMedications" />
-            <TextView
-                android:text="Past pertinent history:"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView5" />
-            <EditText
-                android:inputType="textMultiLine"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editPastHistory" />
-            <TextView
-                android:text="Last intake:"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView6" />
-            <EditText
-                android:inputType="textMultiLine"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editLastIntake" />
-            <TextView
-                android:text="Event:"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView7" />
-            <EditText
-                android:inputType="textMultiLine"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editEvent" />
-            <LinearLayout
-                android:orientation="horizontal"
+                android:id="@+id/textViewPatientID" />
+            <TableLayout
                 android:minWidth="25px"
                 android:minHeight="25px"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/linearLayout1"
-                android:fitsSystemWindows="true"
-                android:background="#ffffffff" />
-            <TextView
-                android:text="Mechanism of Injury:"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView8" />
-            <EditText
-                android:inputType="textMultiLine"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editMOI" />
+                android:id="@+id/tableLayout1">
+                <TableRow
+                    android:id="@+id/tableRow1">
+                    <TextView
+                        android:text="Signs:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView2"
+                        android:layout_column="0" />
+                    <EditText
+                        android:inputType="textMultiLine"
+                        android:id="@+id/editSigns"
+                        android:layout_column="1"
+                        android:width="400px" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow2">
+                    <TextView
+                        android:text="Allergies:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView3"
+                        android:layout_column="0" />
+                    <EditText
+                        android:inputType="textMultiLine"
+                        android:id="@+id/editAllergies"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow3">
+                    <TextView
+                        android:text="Medications:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView4"
+                        android:layout_column="0" />
+                    <EditText
+                        android:inputType="textMultiLine"
+                        android:id="@+id/editMedications"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow6">
+                    <TextView
+                        android:text="Past history:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView5"
+                        android:layout_column="0" />
+                    <EditText
+                        android:inputType="textMultiLine"
+                        android:id="@+id/editPastHistory"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow5">
+                    <TextView
+                        android:text="Last intake:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView6"
+                        android:layout_column="0" />
+                    <EditText
+                        android:inputType="textMultiLine"
+                        android:id="@+id/editLastIntake"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow9">
+                    <TextView
+                        android:text="Event:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView7"
+                        android:layout_column="0" />
+                    <EditText
+                        android:inputType="textMultiLine"
+                        android:id="@+id/editEvent"
+                        android:layout_column="1" />
+                </TableRow>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/linearLayout1"
+                    android:fitsSystemWindows="true"
+                    android:background="#ffffffff" />
+                <TableRow
+                    android:minWidth="25px"
+                    android:minHeight="25px"
+                    android:id="@+id/tableRow14">
+                    <TextView
+                        android:text="MOI:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView8"
+                        android:layout_column="0" />
+                    <EditText
+                        android:inputType="textMultiLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editMOI"
+                        android:layout_column="1" />
+                </TableRow>
+            </TableLayout>
             <Button
                 android:text="Save"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/buttonSave" />
-            <Button
-                android:text="Delete"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/buttonCancel" />
         </TableLayout>
     </ScrollView>
 </LinearLayout>

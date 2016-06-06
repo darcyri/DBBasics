@@ -78,36 +78,29 @@ namespace DBBasics
 		{
 			return me.db.DeletePatient(id);
 		}
-//		public static int HistoryPatient(int id)
+
+//		//Trauma
+//		public static Trauma  GetTrauma(int id)
 //		{
-//			return me.db.HistoryPatientDetails(id);
+//			return me.db .GetTrauma(id);
+//		}
+//
+//		public static IEnumerable<Trauma> GetTraumas ()
+//		{
+//			return me.db.GetTraumas();
+//		}
+//
+//		public static int SaveTrauma (Trauma item)
+//		{
+//			return me.db.SaveTrauma(item);
+//		}
+//
+//		public static int DeleteTrauma(int id)
+//		{
+//			return me.db.DeleteTrauma(id);
 //		}
 
-//		//SAMPLE History
-//		public static SampleHistory   GetSampleHistory(int id)
-//		{
-//			return me.db.GetSampleHistory(id);
-//		}
-//
-////		public static IEnumerable<PatientDetails > GetPatients ()
-////		{
-////			return me.db.GetPatients();
-////		}
-//
-//		public static int SaveSampleHistory (SampleHistory   item)
-//		{
-//			return me.db.SaveSampleHistory(item);
-//		}
-//
-//		public static int DeleteSampleHistory(int id)
-//		{
-//			return me.db.DeleteSampleHistory(id);
-//		}
-//
-//		public static int FindSampleHistory(int id)
-//		{
-//			return me.db.FindSampleHistoryID (id);
-//		}
+//	
 
 	}
 }

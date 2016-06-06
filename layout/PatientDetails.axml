@@ -21,138 +21,175 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtPatientDetails" />
-            <Button
-                android:text="&lt;&lt; Patient Summary"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/buttonPatientSummary" />
             <TextView
-                android:text="First Name:"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textPatName" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editPatName" />
-            <TextView
-                android:text="Surname:"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView2" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editPatSurname" />
-            <TextView
-                android:text="Date of Birth:"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView1" />
-            <EditText
-                android:inputType="date"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editDateOfBirth" />
-            <TextView
-                android:text="Age:"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textPatAge" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editPatAge" />
-            <TextView
-                android:text="Gender"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textPatGender" />
-            <RadioGroup
+                android:id="@+id/textViewPatientID" />
+            <TableLayout
                 android:minWidth="25px"
                 android:minHeight="25px"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/radioGroupGender">
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Male"
-                    android:id="@+id/rbGenderMale" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Female"
-                    android:id="@+id/rbGenderFemale" />
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Other/ Unknown"
-                    android:id="@+id/rbGenderOther" />
-            </RadioGroup>
-            <TextView
-                android:text="Next of Kin:"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView3" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editNextOfKin" />
-            <TextView
-                android:text="NOK Contact Details:"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView4" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editNOKContactDetails" />
-            <TextView
-                android:text="Location:"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView5" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editLocation" />
-            <TextView
-                android:text="Grid Reference:"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView6" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editGridReference" />
-            <TextView
-                android:text="Other Information"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textOtherInfo" />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/editPatOtherInfo" />
+                android:id="@+id/tableLayout1">
+                <TableRow
+                    android:id="@+id/tableRow1">
+                    <TextView
+                        android:text="First Name:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textPatName"
+                        android:layout_column="0" />
+                    <EditText
+                        android:id="@+id/editPatName"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow2">
+                    <TextView
+                        android:text="Surname:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView2"
+                        android:layout_column="0" />
+                    <EditText
+                        android:id="@+id/editPatSurname"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow4">
+                    <TextView
+                        android:text="Date of Birth:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView1"
+                        android:layout_column="0" />
+                    <EditText
+                        android:inputType="date"
+                        android:id="@+id/editDateOfBirth"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow9">
+                    <TextView
+                        android:text="Age:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textPatAge"
+                        android:layout_column="0" />
+                    <EditText
+                        android:id="@+id/editPatAge"
+                        android:numeric="integer"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow12">
+                    <TextView
+                        android:text="Gender"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textPatGender"
+                        android:layout_column="0" />
+                    <RadioGroup
+                        android:minWidth="25px"
+                        android:minHeight="25px"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radioGroupGender"
+                        android:layout_column="1">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:id="@+id/rbGenderMale" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:id="@+id/rbGenderFemale" />
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Other/ Unknown"
+                            android:id="@+id/rbGenderOther" />
+                    </RadioGroup>
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow3">
+                    <TextView
+                        android:text="Next of Kin:"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/textView3"
+                        android:layout_column="0" />
+                    <EditText
+                        android:id="@+id/editNextOfKin"
+                        android:layout_column="1" />
+                </TableRow>
+            </TableLayout>
+            <TableRow
+                android:id="@+id/tableRow13">
+                <TextView
+                    android:text="NOK Contact Details:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView4"
+                    android:layout_column="0" />
+                <EditText
+                    android:id="@+id/editNOKContactDetails"
+                    android:layout_column="1" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow14">
+                <TextView
+                    android:text="Location:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView5"
+                    android:layout_column="0" />
+                <EditText
+                    android:id="@+id/editLocation"
+                    android:layout_column="1" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow16">
+                <TextView
+                    android:text="Grid Reference:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textView6"
+                    android:layout_column="0" />
+                <EditText
+                    android:id="@+id/editGridReference"
+                    android:layout_column="1" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow15">
+                <TextView
+                    android:text="Other Information"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:id="@+id/textOtherInfo"
+                    android:layout_column="0" />
+                <EditText
+                    android:id="@+id/editPatOtherInfo"
+                    android:layout_column="1" />
+            </TableRow>
             <CheckBox
                 android:text="Transferred"
                 android:id="@+id/chkTransferred" />
+            <TextView
+                android:text="Handover To:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/textView7" />
+            <Spinner
+                android:id="@+id/spinnerHandover"
+                android:entries="@array/HandoverAgency" />
             <Button
                 android:text="Save"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/buttonSave" />
+            <Button
+                android:text="Sample History"
+                android:id="@+id/btnSample" />
+            <Button
+                android:text="Trauma"
+                android:id="@+id/buttonTrauma" />
+            <Button
+                android:text="Medical"
+                android:id="@+id/buttonMedical" />
+            <Button
+                android:text="Vitals"
+                android:id="@+id/buttonVitals" />
+            <Button
+                android:text="Handover"
+                android:id="@+id/btnHandover" />
             <Button
                 android:text="Cancel"
                 android:layout_width="match_parent"

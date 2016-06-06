@@ -20,118 +20,156 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/textView1" />
             <TextView
-                android:text="I: Identification"
+                android:text="Text"
+                android:id="@+id/txtPatientID" />
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/tableLayout1">
+                <TableRow
+                    android:id="@+id/tableRow1">
+                    <TextView
+                        android:text="I:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textView2"
+                        android:layout_column="0" />
+                    <TextView
+                        android:id="@+id/txtIdentification"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow2">
+                    <TextView
+                        android:text="M:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textView3"
+                        android:layout_column="0" />
+                    <TextView
+                        android:id="@+id/txtMOI"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow3">
+                    <TextView
+                        android:text="I:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textView5"
+                        android:layout_column="0" />
+                    <TextView
+                        android:id="@+id/txtInjuries"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow5">
+                    <TextView
+                        android:text="S:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textView4"
+                        android:layout_column="0" />
+                    <TextView
+                        android:id="@+id/txtSigns"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow9">
+                    <TextView
+                        android:text="T:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textView6"
+                        android:layout_column="0" />
+                    <TextView
+                        android:id="@+id/txtTreatment"
+                        android:layout_column="1" />
+                </TableRow>
+            </TableLayout>
+            <TableLayout
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/tableLayout2">
+                <TableRow
+                    android:id="@+id/tableRow10">
+                    <TextView
+                        android:text="A:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textView7"
+                        android:layout_column="0" />
+                    <TextView
+                        android:id="@+id/txtAllergies"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow11">
+                    <TextView
+                        android:text="M:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textView8"
+                        android:layout_column="0" />
+                    <TextView
+                        android:id="@+id/txtMedication"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow12">
+                    <TextView
+                        android:text="B"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textView9"
+                        android:layout_column="0" />
+                    <TextView
+                        android:id="@+id/txtBackground"
+                        android:layout_column="1" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow13">
+                    <TextView
+                        android:text="O"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/textView10"
+                        android:layout_column="0" />
+                    <TextView
+                        android:id="@+id/txtOtherInfo"
+                        android:layout_column="1" />
+                </TableRow>
+            </TableLayout>
+            <TextView
+                android:text="Handover to:"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView2" />
-            <TextView
-                android:id="@+id/txtIdentification" />
-            <TextView
-                android:text="M: MOI"
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView11" />
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView3" />
-            <TextView
-                android:id="@+id/txtMOI" />
-            <TextView
-                android:text="I: Injuries/ Illness"
-                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/radioGroup1">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="HSE Ambulance"
+                    android:id="@+id/rbHSE" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ICG Helicopter"
+                    android:id="@+id/rbICG" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="An Garda Siochana"
+                    android:id="@+id/rbAGS" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other/None"
+                    android:id="@+id/rbOther" />
+            </RadioGroup>
+            <Button
+                android:text="Save"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView5" />
-            <TextView
-                android:id="@+id/txtInjuries" />
-            <TextView
-                android:text="S: Signs"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView4" />
-            <TextView
-                android:id="@+id/txtSigns" />
-            <TextView
-                android:text="T: Treatment and Trends"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView6" />
-            <TextView
-                android:id="@+id/txtTreatment" />
+                android:id="@+id/buttonSave" />
         </TableLayout>
     </ScrollView>
-    <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:id="@+id/linearLayout1"
-        android:fitsSystemWindows="true"
-        android:background="#ffffffff"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:text="A: Allergies"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView7" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtAllergies" />
-    <TextView
-        android:text="M: Medication"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView8" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtMedication" />
-    <TextView
-        android:text="B: Background"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView9" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtBackground" />
-    <TextView
-        android:text="O: Other Information"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView10" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtOtherInfo" />
-    <LinearLayout
-        android:orientation="horizontal"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:id="@+id/linearLayout1"
-        android:fitsSystemWindows="true"
-        android:background="#ffffffff"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <TextView
-        android:text="Handover to:"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView11" />
-    <Spinner
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/ddlHandover" />
-    <Button
-        android:text="&lt;&lt; Patient Summary"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnReturn" />
 </LinearLayout>

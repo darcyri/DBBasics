@@ -42,6 +42,52 @@ namespace DBBasics
 
 		public bool Transferred { get; set;}
 
+		//Trauma
+		public bool TraumaChiefComplaint { get; set; }
+		public string TraumaType{ get; set; }
+		public string TraumaDesc { get; set; }
+		public string TraumaLocation { get; set; }
+		public string TraumaInterventions { get; set; }
+		public string TraumaMedAdmin{ get; set; }
+
+		public string PainScaleBefore { get; set; }
+		public string PainScaleAfter{ get; set; }
+
+		//Medical
+
+		public bool MedChiefComplaint { get; set; }
+		public string MedType{ get; set; }
+		public string MedDesc { get; set; }
+		public string MedLocation { get; set; }
+		public string MedInterventions { get; set; }
+		public string MedMedAdmin{ get; set; }
+
+		//Pain
+		public string Onset { get; set; }
+		public string Provokes { get; set; }
+		public string Quality { get; set; }
+		public string Radiates { get; set; }
+		public string Severity { get; set;}
+		public string Time { get; set; }
+
+
+		//Vitals
+		public string VitalSetDate { get; set; }
+		public string VitalSetTime { get; set; }
+		public string Status { get; set; }
+		public string PulseRate { get; set; }
+		public string PulseQuality { get; set; }
+		public string BloodPressure { get; set; }
+		public string RespiratoryRate { get; set; }
+		public string RespiratoryQuality { get; set; }
+		public string SPO { get; set; }
+		public string Temperature { get; set; }
+		public string Colour { get; set; }
+		public string BloodSugar { get; set; }
+		public string CSM { get; set; }
+		public string LOC { get; set; }
+		public string Pupils { get; set; }
+
 	}
 
 
